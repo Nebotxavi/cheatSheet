@@ -1,3 +1,5 @@
+TODO: map React things, node basics
+
 # GIT
 
 General working flow where there is 
