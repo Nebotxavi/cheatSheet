@@ -1,4 +1,4 @@
-TODO: map React things, node basics
+TODO: map React things, node basics, pluggins
 
 # GIT
 
