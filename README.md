@@ -1,8 +1,52 @@
 # GIT
 
+General working flow where there is 
+
+    git remote add 'origin' <link>
+    
+    // new branch
+    git branch <branch_name>
+    // change branch
+    git checkout <branch_name>
+    
+    git add .
+    git commit -m 'comment'
+    // push changes to github, BEFORE USING IT, CHECK IF NEW BRANCH MUST BE CREATED IN THE REPO
+    git push -u origin <branch_name>
+    
+    // change back to master branch
+    git checkout master
+    // pull changes from github
+    git pull origin master
+    // merge changes
+    git merge <branch_name>
+    // push the merged file to master
+    git push origin master
+    
+    // remove the branch locally
+    git branch -d <branch_name>
+    // remove the branch from the repo
+    git push origin --delete <branch_name>
+
 # NODE BASIC
 
+    sudo apt-get update
+    sudo apt-get install nodejs
+    sudo apt-get install npm
+
+    node -v
+    npm -v
+
 # REACT
+
+## SETUP
+
+### CREATE REACT APP
+
+    npx create-react-app my-app
+
+### MINIMAL WEBPACK, BABEL, GIT
+
     mkdir EXAMPLE && cd EXAMPLE && mkdir src && mkdir public && touch src/index.js && touch src/App.js && touch public/index.html 
 
     npm init -y
