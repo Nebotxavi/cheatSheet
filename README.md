@@ -197,7 +197,7 @@ git init
 
 ## Mapping
 
-##### Forms & Validation
+#### Forms & Validation
 
 BookForm: https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/front_book_repo/src/components/bookForm.jsx
 
@@ -210,7 +210,7 @@ Input: https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/f
 Select: https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/front_book_repo/src/components/common/select.jsx
 
 
-##### Context
+#### Context
 
 DataProvider (createContext): https://github.com/Nebotxavi/-React_Portfolio-DRAW-Rural_cabins/blob/master/src/dataProvider.jsx
 
@@ -219,7 +219,8 @@ ProviderConsumer: https://github.com/Nebotxavi/-React_Portfolio-DRAW-Rural_cabin
 useContext: https://github.com/Nebotxavi/-React_Portfolio-DRAW-Rural_cabins/blob/master/src/pages/Cabin.jsx
 
 
-##### Router DOM
+#### Router DOM
+NOTE THAT ROUTER DOM IS CHANGINT A LOT: https://reacttraining.com/blog/react-router-v5-1/
 
 BrowserRoute wrapping: https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/front_book_repo/src/index.js
 
@@ -227,7 +228,7 @@ Route, Switch, Redirect: https://github.com/Nebotxavi/-React_Portfolio-Book_Repo
 
 NavLink, Link: https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/front_book_repo/src/components/navBar.jsx
 
-###### Protected routes
+##### Protected routes
 
 Summary, link that is protected (for example, if user not logged) and will redirect to another window (for example, login) and, in this case, take some action (for example, to login) and then redirect back to the protected link (now accessible). 
 
@@ -237,7 +238,7 @@ ProtectedRoute: https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob
 
 Double redirection (protectedRoute => login =(log)=> protectedRoute): https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/front_book_repo/src/components/loginForm.jsx
 
-###### Hiding links, redirections
+##### Hiding links, redirections
 
 Hiding links (ex: if not logged. Line 27): https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/front_book_repo/src/components/navBar.jsx
 
@@ -248,25 +249,75 @@ Redirection after action with window.location (ex: after login. Line 46): https:
 Redirection after action with history.push (Line 73): https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/front_book_repo/src/components/registerForm.jsx 
 
 
-##### useParams, useLocation, useHistory
+#### useParams, useLocation, useHistory
+
+useParams & useLocation: https://github.com/Nebotxavi/-React_Portfolio-DRAFT-TMDB_clone/blob/master/Desktop/Javascript/react/100daysCode/05-TheMovieDBClone/tmdb-clone/src/components/ItemsSelection.jsx
+
+more info related to previous link: https://github.com/Nebotxavi/-React_Portfolio-DRAFT-TMDB_clone/blob/master/Desktop/Javascript/react/100daysCode/05-TheMovieDBClone/tmdb-clone/src/pages/ItemsType.jsx
+
+more info related to previous link: https://github.com/Nebotxavi/-React_Portfolio-DRAFT-TMDB_clone/blob/master/Desktop/Javascript/react/100daysCode/05-TheMovieDBClone/tmdb-clone/src/components/MoviesLinks.jsx
+
+Summary: 
+
+- useParams() gets the parameters passed through a URL. Example: <Route path="/search/:type/:option" component={ItemsSelection} />
+
+- useLocation() gets the object from the "to" part of Link. Example:  <Link
+        to={{
+          pathname: "/search/movie/popular",
+          state: { title: "Popular Movies" }
+        }}
+      >
+
+#### Data Fetching/ useEffect
+
+Basic '3-steps' data fetching with Axios: https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/front_book_repo/src/components/bookForm.jsx
+
+UseEffect for update State on different updates/events: https://github.com/Nebotxavi/React_Portfolio-Weather_App/blob/master/src/components/common/input/listSuggestions.jsx
+
+More info for previous link + UseEffect with addListeners: https://github.com/Nebotxavi/React_Portfolio-Weather_App/blob/master/src/components/common/input/useKeyPress.jsx
+
+#### useRef (+ handleClickOutside)
+
+ManageClickOutside: https://github.com/Nebotxavi/React_Portfolio-Weather_App/blob/master/src/components/common/manageClickOutside.jsx
+
+ManageClickOutside applied: https://github.com/Nebotxavi/React_Portfolio-Weather_App/blob/master/src/components/searchForm.jsx
+
+#### HTTP service
+
+httpService: https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/front_book_repo/src/services/httpService.js
+
+Implementation of httpService: https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/front_book_repo/src/services/booksService.js
+
+Call to the implementation (see doSubmit function): https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/front_book_repo/src/components/bookForm.jsx
+
+#### Auth service & JWT
+
+AuthService: https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/front_book_repo/src/services/authService.js
+
+#### Local Storage
 
 
-##### Data Fetching/ useEffect
+#### Pagination, sorting, searching, filtering + part of Table
 
-https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/front_book_repo/src/components/bookForm.jsx
+Main: https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/front_book_repo/src/components/books.jsx
 
-##### useRef (+ handleClickOutside)
+Filter menu: https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/front_book_repo/src/components/common/filterMenu.jsx
+
+Search bar: https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/front_book_repo/src/components/common/searchBar.jsx
+
+Pagination: https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/front_book_repo/src/components/common/pagination.jsx
+
+Paginate function: https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/front_book_repo/src/utils/paginate.js
+
+Main table (+ sorting): https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/front_book_repo/src/components/booksTable.jsx
+
+Table (+ sorting): https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/front_book_repo/src/components/common/table.jsx
 
 
-##### HTTP service
 
-##### Auth service
+#### Suggestions list
 
-##### JWT
-
-##### Pagination, sorting, searching, filtering
-
-#####
+Example: https://github.com/Nebotxavi/React_Portfolio-Weather_App/tree/master/src/components/common/input
 
 
 
