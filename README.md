@@ -199,13 +199,22 @@ git init
 
 ##### Forms & Validation
 
+BookForm: https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/front_book_repo/src/components/bookForm.jsx
+LoginForm: https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/front_book_repo/src/components/loginForm.jsx
+Form (all validation): https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/front_book_repo/src/components/common/form.jsx
+Input: https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/front_book_repo/src/components/common/input.jsx
+Select: https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/front_book_repo/src/components/common/select.jsx
+
+
 ##### Context
 
 ##### Router DOM
 
 ##### Protected routes
 
-##### Data Fetching
+##### Data Fetching/ useEffect
+
+https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/front_book_repo/src/components/bookForm.jsx
 
 ##### useRef (+ handleClickOutside)
 
