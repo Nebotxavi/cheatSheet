@@ -195,6 +195,31 @@ app.js
 
 git init
 
+## Mapping
+
+##### Forms & Validation
+
+##### Context
+
+##### Router DOM
+
+##### Protected routes
+
+##### Data Fetching
+
+##### useRef (+ handleClickOutside)
+
+##### useParams, useLocation, useHistory
+
+##### HTTP service
+
+##### Auth service
+
+##### JWT
+
+##### Pagination, sorting, searching, filtering
+
+#####
 
 
 
