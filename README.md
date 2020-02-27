@@ -296,8 +296,11 @@ AuthService: https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/ma
 
 #### Local Storage
 
+Local Storage set and get: https://github.com/Nebotxavi/-React_Portfolio-Hacker_Meaows/blob/master/src/components/settings.jsx
 
 #### Pagination, sorting, searching, filtering + part of Table
+
+##### Books example
 
 Main: https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/front_book_repo/src/components/books.jsx
 
@@ -313,6 +316,13 @@ Main table (+ sorting): https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_
 
 Table (+ sorting): https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/front_book_repo/src/components/common/table.jsx
 
+##### Cabins example (useContext)
+
+Main: https://github.com/Nebotxavi/-React_Portfolio-DRAFT-Rural_cabins/blob/master/src/pages/Cabins.jsx
+
+Data provider (filter application): https://github.com/Nebotxavi/-React_Portfolio-DRAFT-Rural_cabins/blob/master/src/dataProvider.jsx
+
+Filters list (html elements): https://github.com/Nebotxavi/-React_Portfolio-DRAFT-Rural_cabins/blob/master/src/components/FiltersList.jsx
 
 
 #### Suggestions list
