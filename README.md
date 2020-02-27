@@ -228,7 +228,7 @@ Route, Switch, Redirect: https://github.com/Nebotxavi/-React_Portfolio-Book_Repo
 
 NavLink, Link: https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/front_book_repo/src/components/navBar.jsx
 
-##### Protected routes
+#### Protected routes
 
 Summary, link that is protected (for example, if user not logged) and will redirect to another window (for example, login) and, in this case, take some action (for example, to login) and then redirect back to the protected link (now accessible). 
 
@@ -238,7 +238,7 @@ ProtectedRoute: https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob
 
 Double redirection (protectedRoute => login =(log)=> protectedRoute): https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/front_book_repo/src/components/loginForm.jsx
 
-##### Hiding links, redirections
+#### Hiding links, redirections
 
 Hiding links (ex: if not logged. Line 27): https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/front_book_repo/src/components/navBar.jsx
 
