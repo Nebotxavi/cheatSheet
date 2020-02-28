@@ -199,6 +199,8 @@ git init
 
 #### Forms & Validation
 
+Reusable Form component (including Input, Select, Button) and its validation: https://github.com/Nebotxavi/EXAMPLE_form_and_validation
+
 BookForm: https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/front_book_repo/src/components/bookForm.jsx
 
 LoginForm: https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/front_book_repo/src/components/loginForm.jsx
@@ -208,6 +210,10 @@ Form (all validation): https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_A
 Input: https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/front_book_repo/src/components/common/input.jsx
 
 Select: https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/front_book_repo/src/components/common/select.jsx
+
+Validation Schema (mail, repeated items, password): https://github.com/Nebotxavi/-React_Portfolio-Book_Repo_App/blob/master/front_book_repo/src/components/registerForm.jsx
+
+
 
 
 #### Context
