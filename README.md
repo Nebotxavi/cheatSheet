@@ -1,4 +1,18 @@
-TODO: map React things, node basics, pluggins
+# VS Code
+
+- Auto Import - ES6, TS, JSX, TSX (VSCode Extension)
+
+- VS Code ES7 React/Redux/React-Native/JS snippets
+
+- Prettier Formatter for Visual Studio Code
+
+- React Extension Pack
+
+- VS Code Reactjs snippets
+
+- Simple React Snippets
+
+- Search node_modules
 
 # GIT
 
