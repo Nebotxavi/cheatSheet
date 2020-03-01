@@ -348,6 +348,9 @@ Data provider (filter application): https://github.com/Nebotxavi/-React_Portfoli
 
 Filters list (html elements): https://github.com/Nebotxavi/-React_Portfolio-DRAFT-Rural_cabins/blob/master/src/components/FiltersList.jsx
 
+#### Testing
+
+https://github.com/Nebotxavi/-React_Portfolio-DRAFT-Pottery-shop/tree/master/src/__tests__/integration
 
 #### Suggestions list
 
