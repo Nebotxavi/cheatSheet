@@ -356,9 +356,9 @@ https://github.com/Nebotxavi/-React_Portfolio-DRAFT-Pottery-shop/tree/master/src
 
 Example: https://github.com/Nebotxavi/React_Portfolio-Weather_App/tree/master/src/components/common/input
 
+#### UseEffect + setInterval
 
-
-
+https://stackoverflow.com/questions/59146524/call-api-every-x-seconds-in-react-functional-component
 
 
 # NODE
