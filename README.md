@@ -368,3 +368,57 @@ https://stackoverflow.com/questions/59146524/call-api-every-x-seconds-in-react-f
 https://github.com/Nebotxavi/--LEARNING--Node-Mosh_course
 
 # MONGO
+
+# REACT NATIVE
+
+#### Setup
+
+Expo CLI - sudo npm i -g expo-cli
+Install expo client (phone)
+Install Android Studio ./android_studio/bin ./studio.sh
+New project - expo init name
+Consola sudo npm start
+VS Code extensions: React Native Tools, React-Native/react/redux snippets for es6/es7, material icon theme, prettier
+
+#### Structure
+
+.expo
+.expo-shared
+.vscode
+app
+    assets
+    components
+        appText (custom component)
+            index.js
+            AppText.js (module)
+            styles.js (styles)
+    config
+    screens
+    App.js
+    
+(Note about index.js, from app.js, since we have index, we can import AppText as: import AppText from "./app/components/apptext")
+
+#### Dimensions, orientation, platform specific
+
+Platform specific generic styles: https://github.com/Nebotxavi/-React_Native__Mosh/blob/master/app/config/styles.js
+
+SafeAreaView multiplatform (another option without 3rd party packages: paddingTop: Platform.OS === "android" ? StatusBar.currentHeight: 0): https://github.com/Nebotxavi/-React_Native__Mosh/blob/master/app/components/appScreen/AppScreen.js
+(Note, use npm I constants)
+
+App.json config orientation (options: default, portrait, landscape)
+
+Detect dimensions exluding orientation: dimensions.get('screen')
+
+Detect dimensions plus orientation: 
+
+import {useDimensions, useDeviceOrientation} from '@react-native-community/hooks';
+
+console.log(useDimensions())
+const {landscape} = useDeviceOrientation();
+... style={{height: landscape ? "100%" : "30%";
+
+
+
+
+
+
