@@ -398,12 +398,14 @@ app
     
 (Note about index.js, from app.js, since we have index, we can import AppText as: import AppText from "./app/components/apptext")
 
-#### Dimensions, orientation, platform specific
+#### Platform specific
 
 Platform specific generic styles: https://github.com/Nebotxavi/-React_Native__Mosh/blob/master/app/config/styles.js
 
 SafeAreaView multiplatform (another option without 3rd party packages: paddingTop: Platform.OS === "android" ? StatusBar.currentHeight: 0): https://github.com/Nebotxavi/-React_Native__Mosh/blob/master/app/components/appScreen/AppScreen.js
 (Note, use npm I constants)
+
+#### Dimensions, orientation
 
 App.json config orientation (options: default, portrait, landscape)
 
@@ -414,8 +416,75 @@ Detect dimensions plus orientation:
 import {useDimensions, useDeviceOrientation} from '@react-native-community/hooks';
 
 console.log(useDimensions())
+
 const {landscape} = useDeviceOrientation();
+
 ... style={{height: landscape ? "100%" : "30%";
+
+#### Flex, layout, position
+
+<View style={{flex: 1...}} - View que abarca toda la pantalla. Si hay varios views, se dividiran el total (vertical) en partes iguales.
+
+<View style={{flexDirection: row...}} - By default "column". With row, the primary axis (justifyContent) becomes the x axis and Cross Axis the y axis.
+
+<View style={{justifyContent: "center", alignItems: "center"...}} - JustifyContent affects the main axis, alignItems the secondary.
+
+<View style={{flexWrap: "wrap"...}} - To avoid items disappearing due to they are wider than the screen. Wrap will create several rows.
+
+<Child style={{flexGrow... - It will fill all the main axis
+
+<Child style={{flexShrink - If there is no space, the item (child) will shrink.
+
+Note: in React Native, all items are by default Relative. You can use top, bottom, left, right directly.
+
+#### Icons
+
+MaterialCommunityIcons: https://github.com/Nebotxavi/-React_Native__Mosh/blob/master/app/screens/ViewImageScreen.js
+
+#### Swipes and movements
+
+expo install react-native-gesture-handler (use expo instead of npm to avoid compatibility issues)
+
+example: 
+
+Screen: https://github.com/Nebotxavi/-React_Native__Mosh/blob/master/app/screens/MessagesScreen.js
+
+Item with swipeable function: https://github.com/Nebotxavi/-React_Native__Mosh/blob/master/app/components/listItem/ListItem.js
+
+Component to show on swipe: https://github.com/Nebotxavi/-React_Native__Mosh/blob/master/app/components/listItemDeleteAction/ListItemDeleteAction.js
+
+#### UI libraries
+
+React Native Elements: https://react-native-elements.github.io/react-native-elements/
+
+React Native Paper: https://callstack.github.io/react-native-paper/
+
+Native Base: https://nativebase.io/
+
+#### Lists with cards
+
+ListingsScreen: https://github.com/Nebotxavi/-React_Native__Mosh/blob/master/app/screens/ListingsScreen.js
+
+Cards: https://github.com/Nebotxavi/-React_Native__Mosh/blob/master/app/components/appCard/AppCard.js
+
+#### Custom Picker (select)
+
+Picker: https://github.com/Nebotxavi/-React_Native__Mosh/blob/master/app/components/appPicker/AppPicker.js
+
+Basic Picker item component: https://github.com/Nebotxavi/-React_Native__Mosh/blob/master/app/components/pickerItem/PickerItem.js
+
+Icons style picker item component: https://github.com/Nebotxavi/-React_Native__Mosh/blob/master/app/components/categoryPickerItem/CategoryPickerItem.js
+
+
+#### Components examples:
+
+Button: https://github.com/Nebotxavi/-React_Native__Mosh/blob/master/app/components/appButton/AppButton.js
+
+Screen: https://github.com/Nebotxavi/-React_Native__Mosh/blob/master/app/components/appScreen/AppScreen.js
+
+Text: https://github.com/Nebotxavi/-React_Native__Mosh/blob/master/app/components/appText/AppText.js
+
+Text input: https://github.com/Nebotxavi/-React_Native__Mosh/blob/master/app/components/appTextInput/AppTextInput.js
 
 
 
