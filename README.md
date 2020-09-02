@@ -486,8 +486,31 @@ Text: https://github.com/Nebotxavi/-React_Native__Mosh/blob/master/app/component
 
 Text input: https://github.com/Nebotxavi/-React_Native__Mosh/blob/master/app/components/appTextInput/AppTextInput.js
 
+#### FORMS AND VALIDATION
 
+Structure:
 
+Screen
 
+..|__ Form --> Formik
 
+........|__ FormField 
+
+................|__ TextInput
+
+................|__ ErrorMessage
+
+........|__ SubmitButton
+
+Screen with items and validation schema + form (Formik) and form Items: https://github.com/Nebotxavi/-React_Native__Mosh/blob/master/app/screens/ListingEditScreen.js
+
+Form component that includes Formik: https://github.com/Nebotxavi/-React_Native__Mosh/blob/master/app/components/forms/AppForm.js
+
+Form field component that includes the custom TextInput and ErrorMessage: https://github.com/Nebotxavi/-React_Native__Mosh/blob/master/app/components/forms/AppFormField.js
+
+Text input: https://github.com/Nebotxavi/-React_Native__Mosh/blob/master/app/components/appTextInput/AppTextInput.js
+
+Error message: https://github.com/Nebotxavi/-React_Native__Mosh/blob/master/app/components/forms/ErrorMessage.js
+
+Submit button: https://github.com/Nebotxavi/-React_Native__Mosh/blob/master/app/components/forms/SubmitButton.js
 
